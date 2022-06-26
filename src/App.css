@@ -1,6 +1,6 @@
 body {
   font-family: "Josefin Sans";
-  background-color: #fffafb;
+  background-color: #f0edfb;
 }
 
 * {
@@ -11,6 +11,12 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+.logo-container {
+  text-decoration: none;
+  color: #846ae9;
+  /* choose a better font */
 }
 
 .right-arrow,
@@ -53,19 +59,20 @@ body {
 }
 
 .hero-banner-img {
-  position: absolute;
+  /* position: absolute; */
   right: 40px;
   top: 0px;
-  width: 700px;
+  width: 550px;
   height: 900px;
   margin-top: -330px;
+  /* clip-path: inset(40px 40px 40px 40px); */
 }
 
 .exercise-card {
   width: 400px;
   height: 445px;
   background: #fff;
-  border-top: 4px solid #ff2625;
+  border-top: 4px solid #846ae9;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -91,8 +98,8 @@ body {
 }
 
 .search-btn:hover {
-  color: #ff2625 !important;
-  border: 1px solid #ff2625 !important;
+  color: #846ae9 !important;
+  border: 1px solid #846ae9 !important;
 }
 
 .exercise-video {
