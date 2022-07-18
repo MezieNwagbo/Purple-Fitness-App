@@ -8,7 +8,7 @@ import Loader from "./Loader";
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [exercisesPerPage] = useState(6);
+  const [exercisesPerPage] = useState(8);
 
   useEffect(() => {
     const fetchExercisesData = async () => {
@@ -53,14 +53,14 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       <Typography
         variant="h4"
         fontWeight="bold"
-        sx={{ fontSize: { lg: "44px", xs: "30px" } }}
-        mb="46px"
+        sx={{ fontSize: { lg: "34px", xs: "30px" } }}
+        mb="30px"
       >
-        Showing Results
+        Exercise List
       </Typography>
       <Stack
         direction="row"
-        sx={{ gap: { lg: "107px", xs: "50px" } }}
+        sx={{ gap: { lg: "60px", xs: "50px" } }}
         flexWrap="wrap"
         justifyContent="center"
       >
@@ -68,7 +68,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
       </Stack>
-      <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">
+      <Stack sx={{ mt: { lg: "50px", xs: "70px" } }} alignItems="center">
         {exercises.length > 9 && (
           <Pagination
             color="standard"

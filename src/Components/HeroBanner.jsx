@@ -5,16 +5,18 @@ import HeroBannerImage from "../assets/images/banner.jpg";
 
 const HeroBanner = () => (
   <Box
-    sx={{ mt: { lg: "212px", xs: "70px" }, ml: { sm: "50px" } }}
+    id="hero-banner"
+    sx={{ mt: { lg: "0", xs: "70px" }, ml: { sm: "0px" } }}
     position="relative"
     px="20px"
   >
-    <Stack direction="row" justifyContent="space-between">
+    <Stack direction="row" justifyContent="center" alignItems="center">
       <Stack>
         <Typography color="#846ae9" fontWeight="600" fontSize="26px">
           Fit For Everyone
         </Typography>
         <Typography
+          color="#444C64"
           fontWeight={700}
           sx={{ fontSize: { lg: "44px", xs: "40px" } }}
           mb="23px"
@@ -23,7 +25,7 @@ const HeroBanner = () => (
           Find The Perfect <br />
           Workout for you
         </Typography>
-        <Typography fontSize="22px" fontFamily="Alegreya" lineHeight="35px">
+        <Typography color="#444C64" fontSize="22px" lineHeight="35px">
           Check out the most effective exercises personalized to you
         </Typography>
         <a
@@ -39,6 +41,7 @@ const HeroBanner = () => (
             textTransform: "none",
             color: "white",
             borderRadius: "4px",
+            fontFamily: "Calibri",
           }}
         >
           Explore Exercises
@@ -51,7 +54,7 @@ const HeroBanner = () => (
         className="hero-banner-img"
       />
     </Stack>
-    <Typography
+    {/* <Typography
       fontWeight={600}
       color="#846ae9"
       sx={{
@@ -61,7 +64,7 @@ const HeroBanner = () => (
       }}
     >
       Exercise
-    </Typography>
+    </Typography> */}
   </Box>
 );
 

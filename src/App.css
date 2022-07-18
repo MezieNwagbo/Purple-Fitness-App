@@ -1,6 +1,6 @@
 body {
   font-family: "Josefin Sans";
-  background-color: #f0edfb;
+  background-color: #ffffff;
 }
 
 * {
@@ -19,6 +19,9 @@ body {
   /* choose a better font */
 }
 
+#home-menu:hover {
+  color: #846ae9;
+}
 .right-arrow,
 .left-arrow {
   cursor: pointer;
@@ -58,21 +61,36 @@ body {
   height: 742px;
 }
 
+#hero-banner {
+  height: 100vh;
+}
+
 .hero-banner-img {
-  /* position: absolute; */
-  right: 40px;
-  top: 0px;
-  width: 550px;
-  height: 900px;
-  margin-top: -330px;
-  /* clip-path: inset(40px 40px 40px 40px); */
+  position: relative;
+  left: 200px;
+  top: -40px;
+  width: 490px;
+  height: 700px;
+  /* margin-left: 300px; */
+  /* margin-top: -330px; */
+  clip-path: inset(40px 40px 40px 40px);
+  transform: rotate(1deg);
+}
+
+#search-exercise {
+  height: 100vh;
+  background-color: #e8e2ff;
+}
+
+#exercises {
+  height: 100vh;
 }
 
 .exercise-card {
-  width: 400px;
-  height: 445px;
+  width: 250px;
+  height: 240px;
   background: #fff;
-  border-top: 4px solid #846ae9;
+  border-top: 4px solid #e2ddf6;
   border-bottom-left-radius: 20px;
   text-decoration: none;
   display: flex;
@@ -84,7 +102,9 @@ body {
 }
 
 .exercise-card img {
-  height: 326px;
+  height: 150px;
+  width: 200px;
+  margin: auto;
 }
 
 .bodyPart-card {

@@ -6,13 +6,18 @@ import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => (
   <Stack
-    backgroundColor="#f0edfb"
+    backgroundColor="#fff"
     direction="row"
     justifyContent="space-around"
     sx={{
       gap: { sm: "123px", xs: "40px" },
-      mt: { sm: "25px", xs: "20px" },
+      // mt: { sm: "25px", xs: "20px" },
+      py: "10px",
       justifyContent: "none",
+      position: "sticky",
+      top: 0,
+      zIndex: 1,
+      borderBottom: "2px soild black",
     }}
     px="40px"
   >
@@ -31,18 +36,23 @@ const Navbar = () => (
       fontSize="24px"
       alignItems="center"
     >
-      <Link
-        to="/"
+      <a
+        href="#hero-banner"
         style={{
           textDecoration: "none",
           color: "#3A1212",
-          borderBottom: "3px solid #846ae9",
         }}
       >
         Home
-      </Link>
+      </a>
       <a href="#exercises" style={{ textDecoration: "none", color: "#3A1212" }}>
         Exercises
+      </a>
+      <a
+        href="#search-exercise"
+        style={{ textDecoration: "none", color: "#3A1212" }}
+      >
+        Search
       </a>
     </Stack>
   </Stack>

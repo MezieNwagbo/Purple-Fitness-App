@@ -44,7 +44,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                 fontWeight={600}
                 color="#000"
               >
-                {item.video.title}
+                {item.video.title.slice(0, 36)}
               </Typography>
               <Typography fontSize="14px" color="#000">
                 {item.video.channelName}
