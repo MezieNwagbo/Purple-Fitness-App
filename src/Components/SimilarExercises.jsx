@@ -5,9 +5,9 @@ import HorizontalScrollbar from "./HorizontalScrollbar";
 import Loader from "./Loader";
 
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => (
-  <Box sx={{ mt: { lg: "100px", xs: "0px" } }}>
+  <Box id="similar-exercises" sx={{ mt: { lg: "100px", xs: "0px" } }}>
     <Typography
-      sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
+      sx={{ fontSize: { lg: "34px", xs: "15px" }, ml: "20px" }}
       fontWeight={700}
       color="#000"
       mb="33px"
@@ -27,7 +27,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => (
     </Stack>
     <Typography
       sx={{
-        fontSize: { lg: "44px", xs: "25px" },
+        fontSize: { lg: "34px", xs: "15px" },
         ml: "20px",
         mt: { lg: "100px", xs: "60px" },
       }}

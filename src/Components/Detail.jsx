@@ -26,25 +26,31 @@ const Detail = ({ exerciseDetail }) => {
   return (
     <Stack
       gap="60px"
-      sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
+      sx={{
+        flexDirection: { lg: "row" },
+        p: "20px",
+        alignItems: "center",
+        justifyContent: "center",
+        mb: "50px",
+      }}
     >
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
-      <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
+      <Stack sx={{ gap: { lg: "10px", xs: "20px" } }}>
         <Typography
-          sx={{ fontSize: { lg: "64px", xs: "30px" } }}
+          sx={{ fontSize: { lg: "40px", xs: "0px" } }}
           fontWeight={700}
           textTransform="capitalize"
         >
           {name}
         </Typography>
         <Typography
-          sx={{ fontSize: { lg: "24px", xs: "18px" } }}
+          sx={{ fontSize: { lg: "20px", xs: "14px" }, width: "500px" }}
           color="#4F4C4C"
         >
           Exercises keep you strong.{" "}
           <span style={{ textTransform: "capitalize" }}>{name}</span> bup is one
-          of the best <br /> exercises to target your {target}. It will help you
-          improve your <br /> mood and gain energy.
+          of the best exercises to target your {target}. It will help you
+          improve your mood and gain energy.
         </Typography>
         {extraDetail?.map((item) => (
           <Stack key={item.name} direction="row" gap="24px" alignItems="center">
@@ -52,19 +58,19 @@ const Detail = ({ exerciseDetail }) => {
               sx={{
                 background: "#FFF2DB",
                 borderRadius: "50%",
-                width: "100px",
-                height: "100px",
+                width: "70px",
+                height: "70px",
               }}
             >
               <img
                 src={item.icon}
                 alt={bodyPart}
-                style={{ width: "50px", height: "50px" }}
+                style={{ width: "40px", height: "40px" }}
               />
             </Button>
             <Typography
               textTransform="capitalize"
-              sx={{ fontSize: { lg: "30px", xs: "20px" } }}
+              sx={{ fontSize: { lg: "20px", xs: "10px" } }}
             >
               {item.name}
             </Typography>

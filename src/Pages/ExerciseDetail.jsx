@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Box } from "@mui/material";
+import Navbar2 from "../Components/Navbar2";
 
 import { exerciseOptions, fetchData, youtubeOptions } from "../utils/fetchData";
 import Detail from "../Components/Detail";
@@ -53,17 +54,20 @@ const ExerciseDetail = () => {
   if (!exerciseDetail) return <div>No Data</div>;
 
   return (
-    <Box sx={{ mt: { lg: "96px", xs: "60px" } }}>
-      <Detail exerciseDetail={exerciseDetail} />
-      <ExerciseVideos
-        exerciseVideos={exerciseVideos}
-        name={exerciseDetail.name}
-      />
-      <SimilarExercises
-        targetMuscleExercises={targetMuscleExercises}
-        equipmentExercises={equipmentExercises}
-      />
-    </Box>
+    <>
+      <Navbar2 />
+      <Box sx={{ mt: { lg: "46px", xs: "30px" } }}>
+        <Detail exerciseDetail={exerciseDetail} />
+        <ExerciseVideos
+          exerciseVideos={exerciseVideos}
+          name={exerciseDetail.name}
+        />
+        <SimilarExercises
+          targetMuscleExercises={targetMuscleExercises}
+          equipmentExercises={equipmentExercises}
+        />
+      </Box>
+    </>
   );
 };
 
